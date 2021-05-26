@@ -25,10 +25,14 @@ public class StudentArray {
             studList[i] = new Student();
             System.out.println("Enter name: ");
             String name = in.nextLine();
-            studList[i].setName(name);   
+            studList[i].setName(name); 
+            System.out.println("Enter ID#: ");
+            String id = in.nextLine();
+            studList[i].setId(id);
         }
         for (int i = 0; i<studList.length; i++) {
-            System.out.println(studList[i].getName());
+            System.out.println("Student " + i + ": " + studList[i].getName() + 
+                    " " + studList[i].getId());
         }
     }
     
